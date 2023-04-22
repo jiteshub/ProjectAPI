@@ -11,9 +11,7 @@ require('dotenv').config()
 const mongoose = require('mongoose')
 
 
-app.use(cors({
-    origin:"https://enchanting-slippers-bull.cyclic.app/"
-}))
+app.use(cors());
 
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
